@@ -1,26 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1c1c1c;
+
+  --navy-dark: #001a3d;
+  --navy-medium: #002d6b;
+  --blue-primary: #1e40af;
+  --blue-accent: #3b82f6;
+
+  --gray-light: #f3f4f6;
+  --gray-medium: #9ca3af;
+  --gray-dark: #4b5563;
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* Shadcn overrides */
+  --primary: #002d6b;
+  --primary-foreground: #ffffff;
+  --radius: 0.125rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-navy: var(--navy-dark);
+  --color-navy-medium: var(--navy-medium);
+  --color-blue-primary: var(--blue-primary);
+  --color-blue-accent: var(--blue-accent);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container-custom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn-institutional {
+  background-color: var(--blue-primary);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+  display: inline-block;
+  border-radius: var(--radius);
+}
+
+.btn-institutional:hover {
+  background-color: var(--navy-medium);
 }
