@@ -47,6 +47,30 @@ const events = [
         location: "Movenpick Hotel, Accra",
         description: "Celebrating the achievements of UPED alumni and fostering networking between current students and professionals.",
         focus: "Networking"
+    },
+    {
+        date: { day: "14-17", month: "MAY", time: "All Day" },
+        title: "International Youth Conference 13",
+        location: "Los Angeles, U.S.A. / Virtual",
+        description: "The old models of diplomacy are no longer enough to solve the world’s most complex challenges. It’s time for a new approach. At the 13th International Youth Conference (IYC13), we are pioneering the solution: Youth-Led Multilateralism. This is a new paradigm where young leaders don’t just ask for a seat at the table—they build a new one, convening across borders to create tangible solutions for peace and development.\n\nJoin hundreds of changemakers from around the globe for four transformative days of action. Engage in high-level dialogues with established diplomats, master practical skills in hands-on workshops on negotiation, conflict resolution, and policy advocacy, and build a global network of allies. If you are a student, activist, entrepreneur, or young professional passionate about driving real-world change, IYC13 is your platform.\n\nHosted by the International Organization of Youth, IYC13 will take place from May 14–17, 2026, in Los Angeles, U.S.A. Join us for a vibrant in-person experience or participate virtually from anywhere in the world.",
+        focus: "Youth-Led Multilateralism",
+        externalUrl: "https://iycforyouth.org/registration/"
+    },
+    {
+        date: { day: "12-14", month: "AUG", time: "All Day" },
+        title: "AFS Youth Assembly",
+        location: "Geneva, Switzerland",
+        description: "Join us at the 2026 AFS Youth Assembly\nThe AFS Youth Assembly is a global platform that cultivates an international network of young leaders and changemakers through exchange, education, action and impact. The 31st AFS Youth Assembly invites passionate young leaders aged 18-35 to join a global community of changemakers. This event goes beyond dialogue—it’s about action. Through engaging sessions, networking with peers from around the world, and ideation challenges, you’ll gain the skills and connections to create lasting impact, guided by experts and practitioners.\n\nUnder the event theme: “Rise. Reimagine. Rebuild: A World for All,” we will explore four key tracks:\n\nReclaiming Development as a Human Right for All\nPolicy, Justice and Adaptation: Real-World Solutions for Climate Resilience \nRethinking Education: Youth Innovation for Future-Ready Skills\nBridging Divides: The Power of Connection in a Polarized World",
+        focus: "Global Impact",
+        externalUrl: "https://www.youthassembly.org/"
+    },
+    {
+        date: { day: "08-12", month: "JUN", time: "All Day" },
+        title: "Entrepreneurship Summer Camp",
+        location: "Jim Moran College, FSU",
+        description: "The Jim Moran College of Entrepreneurship offers an Entrepreneurship Summer Camp where high school juniors and seniors attend camp for one week with the college! Overnight accommodations will need to be made separately.\n\nThe JMC Entrepreneurship Summer Camp is a fantastic experience packed with fun, knowledge, and innovation. The Jim Moran College of Entrepreneurship faculty and staff facilitate an exciting yet engaging real-world understanding of business startups for a small group of high school students. Young entrepreneurs have the opportunity to learn the importance of strategically assembling a well-balanced team through working in groups. These groups develop innovative ideas accompanied by viable business models and pitch their businesses to a congregation of family and friends.\n\nThe 2026 JMC Entrepreneurship Summer Camp will be June 8-12, 2026.\nApplications will open mid-February.",
+        focus: "Entrepreneurship",
+        externalUrl: "https://jimmorancollege.fsu.edu/summercamp"
     }
 ];
 
@@ -55,6 +79,10 @@ export default function EventsPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleEventClick = (event: typeof events[0]) => {
+        if (event.externalUrl) {
+            window.open(event.externalUrl, '_blank');
+            return;
+        }
         setSelectedEvent(event);
         setIsModalOpen(true);
     };
