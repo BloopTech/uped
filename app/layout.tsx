@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "UPED Bureau | Global Education Advisory & Student Mobility",
   description: "A professional education advisory bureau specializing in international student mobility, exchange programs, and academic placements.",
   keywords: "education advisory, student mobility, exchange programs, academic placements, international education",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
