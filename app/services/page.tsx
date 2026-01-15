@@ -79,6 +79,7 @@ export default function ServicesPage() {
                                 "Documentation Support"
                             ]}
                             image="/hero3.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
                         />
                         <ServiceCard
                             icon={GraduationCap}
@@ -91,6 +92,7 @@ export default function ServicesPage() {
                                 "Application Processing"
                             ]}
                             image="/hero1.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
                         />
                         <ServiceCard
                             icon={Users}
@@ -103,6 +105,7 @@ export default function ServicesPage() {
                                 "Global Citizenship Forums"
                             ]}
                             image="/hero2.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
                         />
                         <ServiceCard
                             icon={School}
@@ -115,6 +118,7 @@ export default function ServicesPage() {
                                 "Guardian & Welfare Guidance"
                             ]}
                             image="/campus.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
                         />
                         <ServiceCard
                             icon={Briefcase}
@@ -127,6 +131,20 @@ export default function ServicesPage() {
                                 "Settlement & Transition Support"
                             ]}
                             image="/hero2.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
+                        />
+                        <ServiceCard
+                            icon={Sparkles}
+                            title="USA Visa History Recovery"
+                            desc="Helping individuals uncover and resolve long-standing visa issues through professional record retrieval and consultation."
+                            features={[
+                                "Visa Record Retrieval",
+                                "Outcome Factor Analysis",
+                                "Consistency Auditing",
+                                "Confidential Consultation"
+                            ]}
+                            image="/hero3.png"
+                            cta={{ label: "Get Assistance", href: "/contact" }}
                         />
                         <div className="bg-navy p-10 flex flex-col justify-center text-white space-y-6 lg:h-full relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-accent/5 rounded-full translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
@@ -152,6 +170,11 @@ export default function ServicesPage() {
                                     Institutional follow-up
                                 </li>
                             </ul>
+                            <div className="pt-6 relative z-10 mt-auto">
+                                <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-navy font-heading font-extrabold uppercase tracking-widest text-[9px] rounded-sm hover:bg-blue-accent hover:text-white transition-all duration-300 w-full justify-center">
+                                    Get Assistance <ArrowRight size={14} />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,7 +242,7 @@ export default function ServicesPage() {
     );
 }
 
-function ServiceCard({ icon: Icon, title, desc, features, image }: { icon: any, title: string, desc: string, features: string[], image: string }) {
+function ServiceCard({ icon: Icon, title, desc, features, image, cta }: { icon: any, title: string, desc: string, features: string[], image: string, cta?: { label: string, href: string } }) {
     return (
         <div className="bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-700 group flex flex-col h-full text-left">
             <div className="relative h-64 w-full overflow-hidden">
@@ -240,6 +263,13 @@ function ServiceCard({ icon: Icon, title, desc, features, image }: { icon: any, 
                         </li>
                     ))}
                 </ul>
+                {cta && (
+                    <div className="pt-6">
+                        <Link href={cta.href} className="inline-flex items-center gap-2 px-6 py-3 bg-navy text-white font-heading font-extrabold uppercase tracking-widest text-[9px] rounded-sm hover:bg-blue-accent transition-all duration-300">
+                            {cta.label} <ArrowRight size={14} />
+                        </Link>
+                    </div>
+                )}
             </div>
         </div>
     );
