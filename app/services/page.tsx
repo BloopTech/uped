@@ -12,7 +12,7 @@ export default function ServicesPage() {
             <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/campus.png"
-                    alt="UPED Bureau Services Banner"
+                    alt="UPED Programs Services Banner"
                     fill
                     className="object-cover"
                     priority
@@ -45,7 +45,7 @@ export default function ServicesPage() {
                         </h2>
                         <div className="w-12 h-1 bg-blue-accent"></div>
                         <p className="text-gray-500 font-light leading-relaxed">
-                            UPED Bureau ensures that clients gain admission into appropriate programs securely, efficiently, and transparently. Our consultancy services cover the entire student mobility lifecycle, from academic and career counselling to pre-departure orientation and settlement support.
+                            UPED Programs ensures that clients gain admission into appropriate programs securely, efficiently, and transparently. Our consultancy services cover the entire student mobility lifecycle, from academic and career counselling to pre-departure orientation and settlement support.
                         </p>
                     </div>
                     <div className="md:w-1/2 relative h-[400px] w-full rounded-sm overflow-hidden shadow-2xl group">
@@ -221,11 +221,19 @@ export default function ServicesPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-24 bg-navy text-white text-center relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-accent to-transparent opacity-30"></div>
+            <section className="py-24 text-white text-center relative overflow-hidden mb-24">
+                <Image
+                    src="/hero2.png"
+                    alt="Background"
+                    fill
+                    className="object-cover"
+                />
+                <div className="absolute inset-0 bg-[#7a5932]/95 z-0"></div>
+
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-accent to-transparent opacity-30 z-10"></div>
                 <div className="container-custom px-6 space-y-10 relative z-10">
                     <h2 className="text-3xl md:text-5xl font-heading font-extrabold tracking-tighter leading-none uppercase">Ready for Professional Advisory?</h2>
-                    <p className="text-gray-400 font-light text-lg max-w-2xl mx-auto italic">
+                    <p className="text-white font-light text-lg max-w-2xl mx-auto italic">
                         Empowering students and young professionals since 2018.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6">

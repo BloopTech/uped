@@ -5,12 +5,23 @@
   --background: #ffffff;
   --foreground: #1c1c1c;
 
-  --navy-dark: #001a3d;
-  --navy-medium: #002d6b;
-  --blue-primary: #1e40af;
-  --blue-accent: #3b82f6;
+  /* Brand Colors Refined - Extracted from Logo */
+  --brand-red-dark: #4a0410;
+  /* Deep Burgundy for contrast */
+  --brand-red: #a20323;
+  /* Logo Crimson */
+  --brand-gold: #ad8150;
+  /* Logo Gold */
+  --brand-gold-light: #e0b47e;
+  /* Light Gold for accents */
 
-  --gray-light: #f3f4f6;
+  /* Semantic Mapping */
+  --navy-dark: var(--brand-red-dark);
+  --navy-medium: var(--brand-red);
+  --blue-primary: var(--brand-gold);
+  --blue-accent: var(--brand-gold-light);
+
+  --gray-light: #fafafa;
   --gray-medium: #9ca3af;
   --gray-dark: #4b5563;
 
@@ -18,7 +29,7 @@
   --font-body: "Open Sans", sans-serif;
 
   /* Shadcn overrides */
-  --primary: #002d6b;
+  --primary: var(--brand-red);
   --primary-foreground: #ffffff;
   --radius: 0.125rem;
 }
@@ -28,6 +39,8 @@
   --color-navy-medium: var(--navy-medium);
   --color-blue-primary: var(--blue-primary);
   --color-blue-accent: var(--blue-accent);
+  --color-brand-red: var(--brand-red);
+  --color-brand-gold: var(--brand-gold);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }

@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 export default function SignupPage() {
     return (
         <div className="bg-white min-h-screen font-body pt-20">
-            <div className="container-custom px-6 pt-12 pb-40 lg:pt-24 lg:pb-80">
-                <div className="flex flex-col lg:flex-row bg-white shadow-[0_30px_100px_rgba(10,24,63,0.1)] rounded-sm overflow-hidden min-h-[700px]">
+            <div className="container-custom px-6 pt-12 pb-12 lg:pt-24 lg:pb-24">
+                <div className="flex flex-col lg:flex-row bg-white shadow-[0_30px_100px_rgba(10,24,63,0.1)] rounded-sm overflow-hidden min-h-[700px] mb-40">
 
                     {/* Left Side: Information & Vision */}
                     <div className="lg:w-1/2 relative p-10 lg:p-20 flex flex-col justify-center bg-navy text-white overflow-hidden">
@@ -61,9 +61,7 @@ export default function SignupPage() {
                             </div>
 
                             <div className="pt-8 border-t border-white/10">
-                                <p className="text-[10px] text-gray-400 uppercase tracking-widest leading-relaxed">
-                                    Join 15,000+ students from African descent who have transitioned to global academic excellence through UPED.
-                                </p>
+                                {/* Text removed */}
                             </div>
                         </motion.div>
                     </div>
@@ -101,7 +99,7 @@ export default function SignupPage() {
                                 <div className="space-y-2 group">
                                     <label className="text-[10px] font-heading font-bold uppercase tracking-widest text-navy group-focus-within:text-blue-accent transition-colors">Primary Service Interest</label>
                                     <select className="w-full bg-gray-light border-b-2 border-transparent focus:border-blue-accent p-3 text-sm font-light outline-none transition-all appearance-none text-gray-400">
-                                        <option>Select Bureau Service</option>
+                                        <option>Select Service</option>
                                         <option>J-1 Summer Work & Travel</option>
                                         <option>College & University Placement</option>
                                         <option>Corporate & Student Conferences</option>
@@ -112,7 +110,7 @@ export default function SignupPage() {
 
                                 <div className="space-y-6 pt-4">
                                     <button type="submit" className="w-full bg-navy text-white py-5 font-heading font-extrabold uppercase tracking-widest text-[10px] rounded-sm hover:bg-blue-accent transition-all duration-300 shadow-xl flex items-center justify-center gap-3">
-                                        Initiate Advisory Account <ArrowRight size={14} />
+                                        Submit <ArrowRight size={14} />
                                     </button>
 
                                     <div className="text-center">

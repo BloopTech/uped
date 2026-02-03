@@ -9,7 +9,7 @@ const events = [
     {
         date: { day: "15", month: "OCT", time: "10:00 AM" },
         title: "Student Leadership & Academic Summit",
-        location: "Accra Bureau HQ / Virtual",
+        location: "Accra  HQ / Virtual",
         description: "Promoting learning, leadership, and global engagement. Join our authorized advisors for a deep dive into global citizenship forums.",
         focus: "Leadership & Academic Growth"
     },
@@ -104,7 +104,7 @@ export default function EventsPage() {
                     </div>
                     <div className="space-y-4">
                         <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-navy uppercase tracking-tighter leading-[0.9]">
-                            Bureau <br /> <span className="text-blue-accent">Engagements</span>
+                            Programs <br /> <span className="text-blue-accent">Engagements</span>
                         </h1>
                         <p className="text-gray-400 font-light text-lg md:text-xl max-w-2xl leading-relaxed">
                             Curated conferences and seminars designed to promote leadership, global mobility, and institutional excellence.

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Home, User, Briefcase, Users, UserPlus, Phone, Menu, X, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -38,13 +39,15 @@ export default function Navbar() {
         >
             <div className="container-custom flex justify-between items-center px-6">
                 {/* Logo Section */}
-                <Link href="/" className="flex items-center space-x-3 group shrink-0">
-                    <div className="w-12 h-12 border-2 border-navy bg-navy flex items-center justify-center rounded-sm transition-transform group-hover:scale-105">
-                        <span className="font-heading font-extrabold text-2xl text-white">U</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className="font-heading font-extrabold text-xl leading-none tracking-tight text-navy">UPED</span>
-                        <span className="font-heading font-semibold text-[10px] leading-none tracking-[0.2em] mt-1 text-gray-500 uppercase">Bureau</span>
+                <Link href="/" className="flex items-center gap-3 group shrink-0 ml-10">
+                    <div className="relative h-24 w-80 transition-transform group-hover:scale-105">
+                        <Image
+                            src="/uped-branding-logo.jpg"
+                            alt="UPED Programs Logo"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
                     </div>
                 </Link>
 

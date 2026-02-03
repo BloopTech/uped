@@ -27,7 +27,7 @@ const team = [
     {
         name: "Elena Zola",
         role: "Director of Social Change",
-        bio: "Dedicated to the Bureau's mission of social impact, Elena oversees our community development initiatives and student leadership forums.",
+        bio: "Dedicated to the Programs' mission of social impact, Elena oversees our community development initiatives and student leadership forums.",
         image: "/hero2.png"
     }
 ];
@@ -76,7 +76,7 @@ export default function TeamPage() {
                         </div>
                         <div className="space-y-6 text-gray-500 font-light leading-relaxed">
                             <p>
-                                At UPED Bureau, we believe that every student of African descent represents a potential global leader. Our team isn't just focused on admissions; we are focused on the **authorized elevation** of academic trajectories.
+                                At UPED Programs, we believe that every student of African descent represents a potential global leader. Our team isn't just focused on admissions; we are focused on the **authorized elevation** of academic trajectories.
                             </p>
                             <p>
                                 We do what we do because the gap between local ambition and global opportunity should no longer be defined by geography. By providing expert, ethical, and strategic advisory, we empower the next generation to claim their place in the world's most prestigious institutions.
@@ -116,7 +116,7 @@ export default function TeamPage() {
             {/* Expertise Section - Modern Grid */}
             <section className="py-24 bg-gray-light border-y border-gray-100 relative">
                 <div className="container-custom px-6 text-center space-y-4 mb-20">
-                    <h2 className="text-4xl font-heading font-extrabold text-navy tracking-tighter uppercase">Bureau <span className="text-blue-accent">Expertise.</span></h2>
+                    <h2 className="text-4xl font-heading font-extrabold text-navy tracking-tighter uppercase">Programs <span className="text-blue-accent">Expertise.</span></h2>
                     <div className="w-16 h-1 bg-blue-accent mx-auto"></div>
                 </div>
 
@@ -180,13 +180,21 @@ export default function TeamPage() {
             </section>
 
             {/* Call to Action - Join the Network */}
-            <section className="bg-navy py-24 text-center relative overflow-hidden group">
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-accent to-transparent opacity-30"></div>
+            <section className="py-24 text-center relative overflow-hidden group mb-24">
+                <Image
+                    src="/hero3.png"
+                    alt="Background"
+                    fill
+                    className="object-cover"
+                />
+                <div className="absolute inset-0 bg-[#7a5932]/95 z-0"></div>
+
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-accent to-transparent opacity-30 z-10"></div>
                 <div className="container-custom px-6 space-y-12 relative z-10">
                     <div className="space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-white tracking-tighter uppercase leading-none">Expand the Bureau's <span className="text-blue-accent">Influence.</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-white tracking-tighter uppercase leading-none">Expand the Programs' <span className="text-blue-accent">Influence.</span></h2>
                         <div className="w-20 h-1 bg-blue-accent mx-auto rounded-full"></div>
-                        <p className="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed text-sm italic">
+                        <p className="text-white max-w-2xl mx-auto font-light leading-relaxed text-sm italic">
                             We are always looking for passionate educational consultants and institutional experts of African descent to join our global board.
                         </p>
                     </div>

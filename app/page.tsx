@@ -11,7 +11,7 @@ export default function Home() {
   const slides = [
     {
       image: "/hero1.png",
-      title: "Global Education Bureau",
+      title: "Global Education Programs",
       subtitle: "Established in 2018 | Accra, Ghana",
     },
     {
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="max-w-4xl space-y-8">
             <div className="inline-flex items-center gap-3 bg-blue-accent/20 backdrop-blur-sm px-6 py-2 rounded-full border border-blue-accent/30 animate-in fade-in slide-in-from-top-4 duration-1000">
               <span className="w-2 h-2 bg-blue-accent rounded-full animate-pulse"></span>
-              <span className="text-[10px] font-heading font-extrabold uppercase tracking-[0.4em] text-blue-accent">Authorized Advisory Bureau</span>
+              <span className="text-[10px] font-heading font-extrabold uppercase tracking-[0.4em] text-blue-accent">Authorized Advisory Programs</span>
             </div>
 
             <h1 className="text-5xl md:text-8xl font-heading font-extrabold leading-[0.9] tracking-tighter drop-shadow-2xl uppercase animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
@@ -132,7 +132,7 @@ export default function Home() {
 
               <div className="pt-4 border-t border-gray-100">
                 <Link href="/about" className="group flex items-center gap-4 text-[11px] font-heading font-extrabold uppercase tracking-widest text-navy hover:text-blue-accent transition-colors">
-                  Learn About The Bureau <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
+                  Learn About The Programs <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
                 </Link>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               <p className="text-gray-300 text-sm font-light leading-relaxed relative z-10">
-                UPED Bureau is an established education advisory and student consultancy agency dedicated to supporting students and young professionals to access quality educational and international mobility opportunities. We ensure that clients gain admission into appropriate programs securely, efficiently, and transparently.
+                UPED Programs is an established education advisory and student consultancy agency dedicated to supporting students and young professionals to access quality educational and international mobility opportunities. We ensure that clients gain admission into appropriate programs securely, efficiently, and transparently.
               </p>
 
               <div className="grid grid-cols-2 gap-8 pt-4 border-t border-white/10 relative z-10">
@@ -254,7 +254,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-gray-500 font-light text-sm leading-relaxed italic">
-                Hear from the students and professionals who have transitioned through our Bureau to prestigious global platforms.
+                Hear from the students and professionals who have transitioned through our Programs to prestigious global platforms.
               </p>
             </div>
 
@@ -269,32 +269,32 @@ export default function Home() {
                   {
                     name: "Bismark Appiah",
                     role: "Exchange Alumnus, 2022",
-                    text: "The J-1 program transformed my perspective on global media. UPED Bureau handled every detail with precision.",
+                    text: "The J-1 program transformed my perspective on global media. UPED Programs handled every detail with precision.",
                     icon: Globe
                   },
                   {
                     name: "Sarah Mensah",
                     role: "Master's Candidate, London",
-                    text: "Securing admission into a UK Russell Group university seemed daunting until I engaged the Bureau's expert pathfinding.",
+                    text: "Securing admission into a UK Russell Group university seemed daunting until I engaged the Programs' expert pathfinding.",
                     icon: GraduationCap
                   },
                   {
                     name: "David Okoro",
                     role: "Foundation Student, Toronto",
-                    text: "The Bureau's guidance on scholarship applications was life-changing. I am now pursuing my dream in Canada.",
+                    text: "The Programs' guidance on scholarship applications was life-changing. I am now pursuing my dream in Canada.",
                     icon: School
                   },
                   // Duplicates for loop
                   {
                     name: "Bismark Appiah",
                     role: "Exchange Alumnus, 2022",
-                    text: "The J-1 program transformed my perspective on global media. UPED Bureau handled every detail with precision.",
+                    text: "The J-1 program transformed my perspective on global media. UPED Programs handled every detail with precision.",
                     icon: Globe
                   },
                   {
                     name: "Sarah Mensah",
                     role: "Master's Candidate, London",
-                    text: "Securing admission into a UK Russell Group university seemed daunting until I engaged the Bureau's expert pathfinding.",
+                    text: "Securing admission into a UK Russell Group university seemed daunting until I engaged the Programs' expert pathfinding.",
                     icon: GraduationCap
                   }
                 ].map((t, i) => (
@@ -322,7 +322,7 @@ export default function Home() {
       <section className="relative py-16 overflow-hidden group">
         <Image
           src="/hero2.png"
-          alt="Bureau Visionary"
+          alt="Programs Visionary"
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-1000"
         />
@@ -359,20 +359,33 @@ function UniversityLogo({ name }: { name: string }) {
 }
 
 function HeroCard({ title, desc, color, href }: { title: string, desc: string, color: string, href: string }) {
-  const isAccentBg = color === "bg-blue-accent";
+  // Determine text colors based on background class for optimal contrast with Red/Gold theme
+  let titleColor = "text-blue-accent"; // Default for Navy (Red) bg -> Light Gold text
+  let descColor = "text-white";       // Default for Navy (Red) bg -> White text
+  let iconColor = "text-white";
+
+  if (color === "bg-blue-primary") { // Gold Background
+    titleColor = "text-navy";        // Dark Red Text
+    descColor = "text-navy";         // Dark Red Text
+    iconColor = "text-navy";
+  } else if (color === "bg-blue-accent") { // Light Gold Background
+    titleColor = "text-navy";        // Dark Red Text
+    descColor = "text-navy";         // Dark Red Text
+    iconColor = "text-navy";
+  }
 
   return (
     <Link
       href={href}
-      className={`${color} p-10 text-white h-48 flex flex-col justify-center gap-2 group hover:brightness-110 transition-all duration-300 relative overflow-hidden`}
+      className={`${color} p-10 h-48 flex flex-col justify-center gap-2 group hover:brightness-110 transition-all duration-300 relative overflow-hidden`}
     >
-      <div className="absolute -right-4 -bottom-4 opacity-5 group-hover:scale-125 transition-transform duration-700">
+      <div className={`absolute -right-4 -bottom-4 opacity-10 group-hover:scale-125 transition-transform duration-700 ${iconColor}`}>
         <Globe size={180} />
       </div>
-      <span className={`text-xs font-heading font-extrabold uppercase tracking-[0.3em] ${isAccentBg ? 'text-white' : 'text-blue-accent'} relative z-10 block`}>
+      <span className={`text-xs font-heading font-extrabold uppercase tracking-[0.3em] ${titleColor} relative z-10 block`}>
         {title}
       </span>
-      <span className="text-sm md:text-lg font-heading font-light relative z-10 leading-tight block">
+      <span className={`text-sm md:text-lg font-heading font-light relative z-10 leading-tight block ${descColor}`}>
         {desc}
       </span>
     </Link>

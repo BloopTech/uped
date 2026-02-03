@@ -11,7 +11,7 @@ export default function AboutPage() {
             <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/campus.png"
-                    alt="UPED Bureau Headquarters"
+                    alt="UPED Programs Headquarters"
                     fill
                     className="object-cover"
                     priority
@@ -20,7 +20,7 @@ export default function AboutPage() {
 
                 <div className="container-custom px-6 relative z-10 text-center space-y-4">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tighter uppercase text-white">
-                        About UPED Bureau
+                        About UPED Programs
                     </h1>
                     <div className="w-20 h-1 bg-blue-accent mx-auto"></div>
                     <p className="text-gray-100 font-light text-sm md:text-lg uppercase tracking-[0.4em] max-w-3xl mx-auto">
@@ -42,10 +42,10 @@ export default function AboutPage() {
                         </div>
                         <div className="space-y-6 text-gray-600 font-light leading-relaxed">
                             <p>
-                                UPED Bureau is an established education advisory and student consultancy agency dedicated to supporting students and young professionals to access quality educational and international mobility opportunities.
+                                UPED Programs is an established education advisory and student consultancy agency dedicated to supporting students and young professionals to access quality educational and international mobility opportunities.
                             </p>
                             <p>
-                                Since its founding in 2018 in Accra, Ghana, UPED Bureau has provided reliable, ethical, and student-centered guidance to individuals seeking academic advancement, professional exposure, and global experiences.
+                                Since its founding in 2018 in Accra, Ghana, UPED Programs has provided reliable, ethical, and student-centered guidance to individuals seeking academic advancement, professional exposure, and global experiences.
                             </p>
                             <p>
                                 Through strong institutional networks, experienced counsellors, and a commitment to social impact, we ensure that clients gain admission into appropriate programs securely, efficiently, and transparently.
@@ -107,7 +107,7 @@ export default function AboutPage() {
                 <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-primary/10 rounded-full blur-[100px]"></div>
                 <div className="container-custom px-6 text-center space-y-16 relative z-10">
                     <div className="space-y-4">
-                        <span className="text-blue-accent font-heading font-bold text-xs uppercase tracking-[0.4em]">The Bureau Standard</span>
+                        <span className="text-blue-accent font-heading font-bold text-xs uppercase tracking-[0.4em]">The Programs Standard</span>
                         <h2 className="text-3xl font-heading font-extrabold tracking-tight uppercase">Core Values</h2>
                         <div className="w-16 h-1 bg-blue-accent mx-auto"></div>
                     </div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                             <div className="space-y-4">
                                 <span className="text-blue-accent font-heading font-bold text-xs uppercase tracking-[0.4em]">The Distinction</span>
                                 <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-navy tracking-tight uppercase">
-                                    Why Choose <br /><span className="text-blue-accent">UPED Bureau</span>
+                                    Why Choose <br /><span className="text-blue-accent">UPED Programs</span>
                                 </h2>
                                 <div className="w-16 h-1 bg-navy"></div>
                             </div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
             <section className="py-24 bg-gray-light border-y border-gray-100">
                 <div className="container-custom px-6 text-center space-y-8">
                     <p className="text-gray-500 font-light italic leading-relaxed max-w-3xl mx-auto">
-                        "UPED Bureau ensures that clients gain admission into appropriate programs securely, efficiently, and transparently through its commitment to educational excellence."
+                        "UPED Programs ensures that clients gain admission into appropriate programs securely, efficiently, and transparently through its commitment to educational excellence."
                     </p>
                     <div className="flex justify-center space-x-12 pt-4">
                         <div className="text-center">

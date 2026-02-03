@@ -12,7 +12,7 @@ export default function ContactPage() {
             <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/campus.png"
-                    alt="Contact UPED Bureau Accra"
+                    alt="Contact UPED Programs Accra"
                     fill
                     className="object-cover"
                     priority
@@ -51,7 +51,7 @@ export default function ContactPage() {
                                 The Accra <br /> <span className="text-blue-accent">Headquarters.</span>
                             </h2>
                             <p className="text-gray-500 font-light text-base leading-relaxed">
-                                Established in 2018, our primary bureau in Accra serves as the central hub for our global institutional network and student mobility operations.
+                                Established in 2018, our primary office in Accra serves as the central hub for our global institutional network and student mobility operations.
                             </p>
                         </motion.div>
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
                                 </div>
                                 <button type="submit" className="md:col-span-2 btn-institutional bg-navy text-white text-center py-6 shadow-xl hover:shadow-navy/20 hover:bg-blue-accent transition-all group overflow-hidden relative">
                                     <span className="relative z-10 flex items-center justify-center gap-3">
-                                        Initiate Registry Dialogue <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                                        Submit <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
                                     </span>
                                 </button>
                             </form>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-blue-accent/10 rounded-full translate-x-32 -translate-y-32 blur-2xl"></div>
 
                                 <div className="space-y-4 relative z-10 text-left">
-                                    <h3 className="text-2xl font-heading font-extrabold tracking-tight uppercase">Accra Bureau</h3>
+                                    <h3 className="text-2xl font-heading font-extrabold tracking-tight uppercase">Accra Office</h3>
                                     <div className="w-12 h-1 bg-blue-accent"></div>
                                 </div>
 
@@ -156,11 +156,11 @@ export default function ContactPage() {
                                     <ContactHubItem
                                         icon={Mail}
                                         title="Registry Email"
-                                        value="advisory@upedbureau.org"
+                                        value="advisory@upedprograms.com"
                                     />
                                     <ContactHubItem
                                         icon={Clock}
-                                        title="Bureau Hours"
+                                        title="Programs Hours"
                                         value="Monday — Friday | 09:00 - 18:00"
                                     />
                                 </div>

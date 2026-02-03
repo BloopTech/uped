@@ -63,7 +63,7 @@ export default function EventDetailModal({ event, isOpen, onClose }: EventDetail
                                 </button>
 
                                 <div className="space-y-2">
-                                    <span className="text-blue-accent font-heading font-bold text-[10px] uppercase tracking-[0.4em]">Bureau Registry</span>
+                                    <span className="text-blue-accent font-heading font-bold text-[10px] uppercase tracking-[0.4em]">Programs Registry</span>
                                     <h2 className="text-3xl font-heading font-extrabold uppercase leading-tight tracking-tight">
                                         {event.title}
                                     </h2>
@@ -170,7 +170,7 @@ export default function EventDetailModal({ event, isOpen, onClose }: EventDetail
                                         <div className="space-y-2">
                                             <h3 className="text-2xl font-heading font-extrabold text-navy uppercase">Registry Confirmed</h3>
                                             <p className="text-gray-500 font-light text-sm italic max-w-xs mx-auto">
-                                                Your participation request has been successfully recorded within the Bureau registry.
+                                                Your participation request has been successfully recorded within the Programs registry.
                                             </p>
                                         </div>
                                         <button
